@@ -10,11 +10,10 @@ for i in xrange(1, 1000):
 		first_half = []
 		last_half_reversed = []
 		candidate = str(i * j)
+		mid_from_start = len(candidate) / 2
 		if len(candidate) % 2 == 0:
-			mid_from_start = len(candidate) / 2
 			mid_from_end = len(candidate) - 1
 		else:
-			mid_from_start = len(candidate) / 2
 			mid_from_end = len(candidate) / 2
 		for k in xrange(0, mid_from_start):
 			first_half.append(candidate[k])
